@@ -1,0 +1,11 @@
+label{
+    font-weight: 600;
+    font-size:14px;
+}
+.mt-10{
+    margin: 30px auto 20px;
+}
+.btn-task{
+    width :200px ;
+    margin-right: 30px;
+}
