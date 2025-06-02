@@ -2,17 +2,24 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Header from './header'
-import AddTask from './add-task'
-import TaskList from './list-task'
+import Header from './components/header'
+import TaskList from './components/Task-components/list-task';
+import AddTask from './components/Task-components/add-task';
+import { Routes, Route, Link } from 'react-router-dom';
+
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
-   <><Header />
-   {/* <AddTask /> */}
-   <TaskList/>
-   </>
+    <>
+      <Header />
+      <Routes>
+        <Route path="/" element={<TaskList/>}></Route>
+        <Route path="/create" element={<AddTask/>}></Route>
+      </Routes>
+
+
+    </>
   )
 }
 
