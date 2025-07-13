@@ -9,3 +9,10 @@ label{
     width :200px ;
     margin-right: 30px;
 }
+
+.error {
+  color: red;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
